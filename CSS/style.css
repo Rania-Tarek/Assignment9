@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+.bookmark{
+    background-color: #f7ecde;
+    
+}
+
+.title{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    position: relative;
+    isolation: isolate;
+    font-weight: 500;
+}
+
+.title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 15%;
+    padding-bottom: 15px;
+    background-color: #fec260;
+    width: 35%;
+    margin-inline: auto;
+    bottom: 50px;
+    transition: height 350ms;
+    z-index: -1;
+}
+
+.title:hover::before{
+    height: 30%;
+}
+.content{
+    border: none;
+    border-top: 2px dotted black;
+    
+}
+.content h2{
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+hr{
+    border: none;
+    border-top: 2px dotted black;
+}
